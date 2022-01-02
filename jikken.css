@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+}
+img{
+    float:left;
+    height: 200px;
+}
+.img-container{
+    margin: 50px;
+    text-align: center;
+}
+.slide{
+    display: none;
+}
+.active{
+    display: block;
+}

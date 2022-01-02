@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kadai010.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-center">
+                <h1>影山亮太のポートフォリオサイト</h1>
+            </div>
+            
+            <div class="header-right">
+                <div id="app">
+                    <!--ハンバーガーメニューのボタン-->
+                    <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
+                      <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+                      <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
+                      <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+                    </div>
+                    <!--サイドバー-->
+                    <transition name="menu">
+                      <div class="menu" v-show="ActiveBtn">
+                          <ul>
+                              <li><a href="kadai01.html">homeへ</a></li>  
+                              <li><a href="https://www.ipc.fit.ac.jp/~s20c2031/jnet/kadai01.html">永田啓吾さん</a></li>
+                          </ul>
+                      </div>
+                  </transition>
+                  </div>
+                  <script>
+                      new Vue({
+                          el:"#app",
+                          data:{
+                              ActiveBtn:false
+                          }
+                      })
+                  </script>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="top-wrapper">
+        <div class="title">
+            <h2>作成したアプリ兼Webサイト</h2>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-wrapper">
+                    
+                    <a href="http://bookt-app.herokuapp.com/home">
+                        <img src="myapplication.jpeg" class="card-main" alt="キャプチャー">
+                    </a>
+                    
+                    <p>読書感想文アプリ</p>
+                </div>
+            <p class="card-texts">
+            このアプリケーションは掲示板形式で自分のお気に入りの本をレビューするアプリです.<br>
+            作ったきっかけは,8月に某サイトでプログラミングを学びそのアウトプットのために作りました.<br>
+            日付:9月20日から24日<br>
+            言語:ruby on rails <br>
+            使った技術:Github,heroku</p>
+
+            </div>
+            <div class="card">
+                <div class="card-wrapper">
+                    
+                        <a href="">
+                            <img src="mitei.png" class="card-main" alt="todoアプリ">
+                        </a>
+                    
+                    <p>未定</p>
+                </div>
+                <p class="card-texts">近日公開</p>
+            </div>
+            <div class="card">
+                <div class="card-wrapper">
+                    
+                        <a href="">
+                            <img src="mitei.png" class="card-main" alt="todoアプリ">
+                        </a>
+                        
+                    <p>未定</p>
+                </div>
+                <p class="card-texts">近日公開</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h1>影山亮太</h1>
+                <p>何か質問がある方は下記の連絡先までお願いします.</p>
+                <p>Email:s20c2007@bene.fit.ac.jp</p>
+                
+            </div>
+            <div class="footer-center">
+                <p>Copyright©︎Kageyama Ryouta</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

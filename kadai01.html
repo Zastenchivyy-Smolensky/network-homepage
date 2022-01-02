@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kageyama ryouta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="kadai01.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
+</head>
+
+<body>
+<header>
+<div class="container">
+    <div class="header-left">
+        <h1>影山亮太</h1>
+        
+
+    </div>
+        
+        <div id="app">
+            <div class="homepage_btn" v-on:click="ActiveBtn=!ActiveBtn">
+                <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+                <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
+                <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+            </div>
+        
+        <transition>
+            <div class="menu" v-show="ActiveBtn">
+                <ul>
+                    <li><a href="kadai010.html" target=_blank>ポートフォリオサイト</a></li>
+                    <li>協力者のサイトへ</li>                    
+                    <li><a href="https://www.ipc.fit.ac.jp/~s20c2031/jnet/kadai01.html">永田啓吾さん</a></li>
+                    <li><a href="https://www.ipc.fit.ac.jp/~s20c2050/jnet/kadai01.html">田口尚樹さん</a></li>
+                </ul>
+            </div>
+        </transition>
+        </div>
+        
+        </div>
+    
+    <script>
+        
+        new Vue({
+            el:"#app",
+            data:{
+                ActiveBtn:false
+            }
+        })
+    </script>
+        
+    </div>
+</div>
+</header>
+
+    <div class="top-wrapper">
+        <div class="container">
+            
+            <h1>HELLO EVERYONE.<br> Welcome to my Website <br>MY NAME IS RYOUTA KAGEYAME</h1>
+            
+            <p>皆さんこんにちは.影山亮太のページへようこそ</p>
+        </div>
+        <a href="https://fit.ac.jp" target="_blank" class="btn signup signup-show">福岡工業大学へ</a>
+        <p>or</p>
+        <a href="https://www.google.com/" class="btn google" target="_blank"><span class="fa fa-google"></span>googleへ</a>
+        <a href="https://github.com/Zastenchivyy-Smolensky" target="_blank" class="btn github"><span class="fa fa-github"></span>Githubへ</a>
+    </div>
+    
+    
+    <div class="line-book">
+        <div class="container1">
+            
+            <h1>影山亮太(2001年10月27日~)<br>(Zastenchivyy-Mikhailovich-Smolensky)</h1>
+            
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    <div class="history" id="history">
+        <div class="histroy-container">
+            <h3>経歴</h3>
+            <ul>
+                <li>2001年10月27日:福岡で生まれる</li>
+                <li>2020年3月:九州産業高校を卒業をする</li>
+                <li>2020年4月:福岡工業大学に入学するも入学式は行われなかった<br>(以降1年間はオンライン授業が中心となる)</li>
+                <li>2020年11月:大学でのクラウドアプリ講座でWebアプリやWebサービスの作り方を学ぶ<br>その過程でWeb系言語や技術に興味を持ちWebエンジニアを志す</li>
+                <li>2021年4月:大学の情報系のサークルに入る</li>
+                <li>2021年8月:ハッカソンに参加するも自分の技術力の低さに痛感する</li>
+                <li>2021年11月:ハックツゲンバに参加する</li>
+                <li>2021年12月:ハックツハッカソンに参加する(予定)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="faq">
+    <div class="faq-title"><h3>プロフィール</h3></div>
+        <div class="faq-contents">
+            <ul class="faq-list">
+                <li class="faq-list-item">
+                    <h3 class="question">出身地はどこですか?</h3>
+                    <span>+</span>
+                    <h3 class="answer">福岡県の大野城市</h3>
+                </li>
+                <li class="faq-list-item">
+                    <h3 class="question">趣味はなに?</h3>
+                    <span>+</span>
+                    <h3 class="answer">プログラミング(アプリ開発,Webサイト作成),
+                    歴史(特にロシア史,近代史),読書,音楽鑑賞(クラシック音楽,La Marseillaise),映画鑑賞,ゲーム,動画鑑賞(特にエンジニア系)</h3>
+                </li>
+                <li class="faq-list-item">
+                    <h3 class="quesiton">クラブは何にはいっているの?</h3>
+                    <span>+</span>
+                    <h3 class="answer">情報技術研究部</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>連絡先</p>
+            <p>mail:20c2007@bene.fit.ac.jp</p>
+            <p>Github:Zastenchivyy-Smolesky</p>
+        </div>
+        
+    </footer>
+    <script src="kadai01.js"></script>
+</body>
+</html>

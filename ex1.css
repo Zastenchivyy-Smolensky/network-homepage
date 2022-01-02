@@ -1,0 +1,71 @@
+body{
+    background-color: skyblue;
+    color: darkblue;
+}
+body li{
+    list-style: none;
+}
+h1{
+    font: 40px bold;
+    color:aqua ;
+    text-shadow: 2px 2px 0px white,5px 5px 2px #000000;
+}
+ul{
+    font-size:20pt;
+}
+header{
+    background-color:rgba(34, 49, 52, 0.9);
+    color:white;
+    height: 65px;
+    width: 100%;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+.header-right{
+    transition:all 0.5s;
+    float:right;
+}
+.header-left h1{
+    padding: 90px;
+}
+.header-left{
+    float:left;
+}
+.cotainer1{
+    padding:90px;
+}
+footer{
+    background-color: aqua;
+    height: 90px;
+    width: 100%;
+}
+footer h2{
+    padding:15px;
+}
+.faq{
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 80px;
+    color: black;
+}
+.faq-list-item{
+    margin: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    text-align:left;
+}
+.faq-list-item span{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: #ccc;
+    font-size:13px;
+}
+.answer{
+    font-size: 12px;
+    padding: 5px 0px;
+    margin-bottom:15px;
+    display: none;
+}
