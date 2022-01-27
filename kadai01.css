@@ -9,7 +9,7 @@ li{
     color:white;
 }
 .container{
-    width:1170px;
+    width:100%;
     margin:0 auto;
 }
 .top-wrapper h1{
@@ -230,4 +230,18 @@ footer p{
     margin: 1rem;
     padding: 0;
   }
-  
+  @media(max-width:479px){
+    
+    header{
+      width: 100%;
+    }
+    .top-wrapper{
+      width: 100%;
+    }
+    .btn{
+      width: 100%;
+    }
+    .btn signup{
+      margin-bottom: 10px;
+    }
+  }
